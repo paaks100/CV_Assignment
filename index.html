@@ -1,0 +1,51 @@
+<!DOCTYPE hmtl>
+<html>
+<head>
+    <title>Curriculum Vitae Details</title>    
+    <link rel="stylesheet" type="text/css" href="indexstyle.css">
+</head>
+    
+<body>
+    <h2>Please provide the necessary details below</h2>
+    <form id="addForm" class="form-box" action="cv.html" onsubmit="return checkValidate()">
+        <div class="container">
+            <div class="field">
+                <label for="first">First Name:</label>
+                <input id="first" type="text"  required name="f_name" onfocus="checkFirst()" placeholder="Enter your first name">
+            </div>
+            <div class="field">
+                <label for="middle">Middle Name:</label>
+                <input id="middle" type="text" name="m_name" onfocus="checkMiddle()" placeholder="Enter your middle name">
+            </div>
+            <div class="field">
+                <label for="last">Last Name:</label>
+                <input id="last" type="text" required name="l_name" onfocus="checkLast()" placeholder="Enter your last name">
+            </div>
+            <div class="field">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="tel-number">Phone Number:</label>
+                <input id="tel-number" type="number" required name="phone_no" onfocus="checkCell()" placeholder="Enter your phone number">
+            </div>
+            <div class="field">
+                <label for="email">Email:</label>
+                <input id="email" type="email" required name="email_add" placeholder="Enter your email address">
+            </div>
+            <div class="field">
+                <label for="home">Address:</label>
+                <input id="home" type="text" required name="home_add" placeholder="Enter your home address">
+            </div>
+            <div class="button">
+                <input id="addtostorage" type="submit" onclick="">
+            </div>
+            <div class="radio-box" id="form-errors"></div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </form>
+</body>
+</html>
